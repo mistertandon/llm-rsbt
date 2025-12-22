@@ -17,6 +17,9 @@ class Vocabulary:
 
         return self.preprocessed_tokens
 
+    def add_special_tokens(self, special_tokens):
+        self.sorted_tokens.extend(special_tokens)
+
     def get_unique_tokens(self):
         self.unique_tokens = set(self.preprocessed_tokens)
 
