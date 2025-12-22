@@ -1,5 +1,6 @@
 How to run ipynb in VS Code
-http://localhost:8888/lab?token=46d10df032a9f74062d524af6692542ebd5e212a32b71fe4
+
+http://localhost:8888/lab?token=0ec5c12b0f34bb90dce6932d0aa8637f895cbd5a0635f662
 
 ### Install conda and run below command to set up environment
 
