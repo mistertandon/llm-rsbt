@@ -5,3 +5,6 @@ git commit -m 'feat: Develop a Vocabulary class to build a vocabulary from the p
 git push origin Feature-01-Simple-Tokenization
 git push origin main
 
+git commit -m 'feat:
+1. Add keyboard shortcuts when working with JupyterLab inside Visual Studio Code.
+2. Implement a tiktoken-based tokenizer as used in GPT models'
