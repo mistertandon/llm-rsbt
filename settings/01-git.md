@@ -1,3 +1,6 @@
+http://localhost:8888/lab?token=5284ff06fc788f1502de6624ad4dc399d1b96074fd9b9e15
+
+
 git commit -m 'feat: Develop code to tokenize The Verdict text'
 git commit -m 'feat: Develop a SimpleTokenizerV2 class that generates tokens for a given vocabulary derived from The Verdict text. And generate tokenID for unknown token'
 git commit -m 'feat: Develop a Vocabulary class to build a vocabulary from the provided corpus text.'
@@ -15,3 +18,12 @@ git commit -m 'feat:
 git commit -m 'feat:
 1. Basic functionality to convert tokenID to embedding weight matrix'
 
+ch_02_28_encoding_word_positions
+ch_03_3_3_1_simple_self_attention
+
+git commit -m 'feat:
+ch02_27_creating_token_embeddings: Create Input token embedding
+ch02_28_encoding_word_positions: Create Input token position embedding'
+
+git commit -m 'feat:
+ch_03_3_1_simple_self_attention: Calculate the attention weight associated with the element at index 2 in the input sequence.'
