@@ -19,4 +19,6 @@ Fix grammar and turn below content into ielts band 9
 Input:
 Develop an improved version of the SelfAttention_V1 class by replacing nn.Parameter-based weight matrices with nn.Linear layers to enable fully trainable and modular projection mechanisms.'
 
+ch_03_3.5_causal_attention.ipynb
+
 /media/mistertandon/DATA/git_repos/ai/01-llm-rsbt/ch_03/ch_03_3.4.1.1_generalized_attention_weights.py

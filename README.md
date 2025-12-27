@@ -17,3 +17,8 @@ https://github.com/pytorch/examples/blob/main/vae/main.py
 ### Confirm that an NVIDIA GPU exists
 
 lspci | grep -i nvidia
+
+---
+
+dim = 0  → operate column-wise (down the rows)
+dim = 1  → operate row-wise (across the columns)
