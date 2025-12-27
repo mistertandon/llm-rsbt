@@ -1,23 +1,23 @@
 import torch
 import torch.nn as nn
 
-""" Self-Attention V1 Implementation
+""" Self-Attention V2 Implementation
 How to run:
-python ch_03/ch_03_3.4.1.1_SelfAttention_V1.py
+python ch_03/ch_03_3.4.1.1_SelfAttention_V2.py
 """
-class SelfAttention_V1(nn.Module):
+class SelfAttention_V2(nn.Module):
 
-    def __init__(self, d_in, d_out):
+    def __init__(self, d_in, d_out, qkv_bias=False):
         super().__init__()
         torch.manual_seed(123)
-        self.W_query = nn.Parameter(torch.randn(d_in, d_out))
-        self.W_key = nn.Parameter(torch.randn(d_in, d_out))
-        self.W_value = nn.Parameter(torch.randn(d_in, d_out))
+        self.W_query = nn.Linear(d_in, d_out, bias=qkv_bias)
+        self.W_key = nn.Linear(d_in, d_out, bias=qkv_bias)
+        self.W_value = nn.Linear(d_in, d_out, bias=qkv_bias)
     
     def forward(self, x):
-        queries = torch.matmul(x, self.W_query)
-        keys = torch.matmul(x, self.W_key)
-        values = torch.matmul(x, self.W_value)
+        queries = self.W_query(x)
+        keys = self.W_key(x)
+        values = self.W_value(x)
 
         d_k = keys.shape[-1]
         attention_scores = torch.matmul(queries, keys.T)
@@ -39,7 +39,7 @@ inputs = torch.tensor(
 d_in = inputs.shape[-1]
 d_out = 2
 
-sa_v1 = SelfAttention_V1(d_in, d_out)
-context_vectors = sa_v1(inputs)
+sa_v2 = SelfAttention_V2(d_in, d_out)
+context_vectors = sa_v2(inputs)
 
 print("Context Vectore: ", context_vectors)
