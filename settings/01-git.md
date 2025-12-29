@@ -1,4 +1,4 @@
-http://127.0.0.1:8888/lab?token=49e269e81a7acedfb2c690d31e5fa481411c65032db159bb
+http://127.0.0.1:8888/lab?token=01fd9c62dd1722cc8063e13c7b34c8f7b5dc8e3c702cce0b
 
 
 git commit -m 'feat: Develop code to tokenize The Verdict text'
@@ -10,15 +10,15 @@ git push origin main
 
 git commit -m 'feat:
 
-Develop an improved version of the SelfAttention_V1 class by replacing nn.Parameter-based weight matrices with nn.Linear layers to enable fully trainable and modular projection mechanisms.'
+Develop basic MultiheadAttentionWrapper'
 
 
 
 Assume you're a ml researcher
 Fix grammar and turn below content into ielts band 9
 Input:
-Develop an improved version of the SelfAttention_V1 class by replacing nn.Parameter-based weight matrices with nn.Linear layers to enable fully trainable and modular projection mechanisms.'
+Develop basic MultiheadAttentionWrapper'
 
-ch_03_3.5_causal_attention.ipynb
+python ch_03_3.5.3_commpact_causal_attention.py
 
 /media/mistertandon/DATA/git_repos/ai/01-llm-rsbt/ch_03/ch_03_3.4.1.1_generalized_attention_weights.py
